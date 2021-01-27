@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KBS Plugin : Blindmotion Remittance
+Bundle-SymbolicName: com.kylinsystems.kbs.plugins.blindmotion.remittance;singleton:=true
+Bundle-Version: 8.2.0.qualifier
+Bundle-Vendor: KBS
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: org.adempiere.plugin.utils,
+ org.adempiere.base
+Service-Component: OSGI-INF/RemittanceFactory.xml
+Import-Package: org.apache.commons.lang;version="2.6.0"
+Bundle-Activator: org.adempiere.plugin.utils.Incremental2PackActivator
+Export-Package: au.blindmot.remittance,
+ au.blindmot.remittance.factory
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: com.kylinsystems.kbs.plugins.blindmotion.remittance
